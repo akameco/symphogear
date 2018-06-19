@@ -36,8 +36,12 @@
   ],
   "dependencies": {
     "execa": "^0.10.0",
+    "find-cache-dir": "^2.0.0",
     "find-exec": "^1.0.0",
-    "meow": "^3.7.0"
+    "got": "^8.3.1",
+    "is-url-superb": "^2.0.0",
+    "meow": "^3.7.0",
+    "mkdirp": "^0.5.1"
   },
   "devDependencies": {
     "all-contributors-cli": "^5.0.0",
