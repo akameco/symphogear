@@ -5,7 +5,25 @@
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors)
 
-> sound for cli
+> cacheable mp3 player from files and url for CLI
+
+## CLI
+
+```
+$ npm install --global symphogear
+```
+
+```
+$ symphogear --help
+
+	Usage
+	  $ symphogear [file]
+
+	Examples
+	  $ symphogear さな.mp3
+
+	  $ symphogear http://sanabutton.ojaru.jp/sound/%E3%81%9B%E3%82%93%E3%81%9B%E3%81%88%E3%81%A8%E3%81%AA%E3%81%84%E3%81%97%E3%82%87%E3%81%B0%E3%81%AA%E3%81%97/%E3%81%A4%E3%81%8E%E3%81%A4%E3%81%8E%E3%81%A4%E3%83%BC%E3%81%8E06.mp3
+```
 
 ## Install
 
@@ -47,24 +65,6 @@ Type: `string`<br>
 - omxplayer
 - aplay
 - cmdmp3
-
-## CLI
-
-```
-$ npm install --global symphogear
-```
-
-```
-$ symphogear --help
-
-	Usage
-	  $ symphogear [file]
-
-	Examples
-	  $ symphogear さな.mp3
-
-	  $ symphogear http://sanabutton.ojaru.jp/sound/%E3%81%9B%E3%82%93%E3%81%9B%E3%81%88%E3%81%A8%E3%81%AA%E3%81%84%E3%81%97%E3%82%87%E3%81%B0%E3%81%AA%E3%81%97/%E3%81%A4%E3%81%8E%E3%81%A4%E3%81%8E%E3%81%A4%E3%83%BC%E3%81%8E06.mp3
-```
 
 ## Contributors
 

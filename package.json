@@ -1,7 +1,7 @@
 {
   "name": "symphogear",
   "version": "0.2.2",
-  "description": "sound for cli",
+  "description": "cacheable mp3 player from files and url for CLI",
   "license": "MIT",
   "repository": "akameco/symphogear",
   "author": "akameco <akameco.t@gmail.com> (akameco.github.io)",
