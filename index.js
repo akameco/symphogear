@@ -3,11 +3,14 @@
 const fs = require('fs')
 const path = require('path')
 const crypto = require('crypto')
+const envPaths = require('env-paths')
 const execa = require('execa')
 const got = require('got')
+const makeDir = require('make-dir')
 const isUrl = require('is-url-superb')
-const findCacheDir = require('find-cache-dir')
 const findExec = require('find-exec')
+
+const paths = envPaths('symphogear')
 
 const PLAYERS = [
   'mplayer',
@@ -42,14 +45,13 @@ async function fetchFile(file /*: string */) {
     return file
   }
 
-  const filePath = path.join(
-    findCacheDir({ name: 'symphogear', create: true }),
-    toHash(file)
-  )
+  const filePath = path.resolve(paths.cache, toHash(file))
 
   if (fs.existsSync(filePath)) {
     return filePath
   }
+
+  await makeDir(path.dirname(filePath))
 
   const { body } = await got(file, { encoding: null })
 
