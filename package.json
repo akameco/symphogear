@@ -11,7 +11,6 @@
   },
   "scripts": {
     "add-contributor": "all-contributors add",
-    "precommit": "yarn flow && lint-staged",
     "fmt": "prettier --write '**/*.{js,json,md}'",
     "flow": "flow",
     "lint": "eslint .",
@@ -45,13 +44,18 @@
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
-    "all-contributors-cli": "^5.0.0",
-    "eslint": "^4.19.1",
-    "eslint-config-precure": "^2.7.0",
-    "flow-bin": "^0.74.0",
-    "husky": "^0.14.3",
-    "jest": "^23.1.0",
-    "lint-staged": "^7.2.0",
-    "prettier": "^1.13.5"
+    "all-contributors-cli": "^5.4.0",
+    "eslint": "^5.6.1",
+    "eslint-config-precure": "^3.1.0",
+    "flow-bin": "^0.83.0",
+    "husky": "^1.1.2",
+    "jest": "^23.6.0",
+    "lint-staged": "^7.3.0",
+    "prettier": "^1.14.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn flow && lint-staged"
+    }
   }
 }
